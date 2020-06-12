@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="title">
+		<a href="" id="title"></a>
+	</div>
+	
+	<nav class="header"> 
+		<div class="menu">
+			<ul id="menu">
+				<!-- Menu Dengan Javascript -->
+			</ul>
+		</div>
+	</nav>
+
+	<div class="konten">
+		<div class="kolom1">
+
+			<div class="isine pesan_tiket">
+				<h3>
+					Pesan Tiket
+				</h3>
+				<h4>Silahkan isi form dibawah ini untuk pemesanan tiket:</h4>
+				
+				<div class="pesan">
+					<form method="post" onsubmit="return false;">
+
+						<div class="inputan">
+							<label>Nama Pemesan</label>
+							<input type="text" class="input" id="nama_pemesan" name="nama_pemesan" placeholder="Nama Pemesan">
+						</div>
+
+						<div class="inputan">
+							<label>Tanggal Berangkat</label>
+							<input type="date" name="tanggal_berangkat" class="input" id="tanggal_berangkat" placeholder="Tanggal Berangkat">
+						</div>
+
+						<div class="inputan">
+							<label>Tujuan</label>
+							<select name="tujuan" id="tujuan" class="input tujuan" onchange="pilihTujuan(this)"></select>
+						</div>
+
+						<div class="inputan">
+							<label>Jumlah Tiket</label>
+							<input type="text" name="jumlah_tiket" id="jumlah_tiket" class="input" onkeyup="number(this)">
+						</div>
+
+						<input type="hidden" id="harga" name="harga">
+
+						<div class="inputan">
+							<button type="button" onclick="cariTiket()" class="btn btn-biru">
+								<i class="fa fa-search"></i>
+								Cari Tiket
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="isine detail_pesan" id="detail_pesan" style="display: none;">
+				<h3>
+					Detail Pemesanan Tiket
+				</h3>
+				
+				<table>
+					<tr>
+						<td style="width: 50%">
+							<div class="pesan">
+								<form>
+									<div class="inputan">
+										<label>Tanggal Berangkat</label>
+										<input type="date" name="tanggal_berangkat" class="input" id="tanggal_berangkat_pesan" placeholder="Tanggal Berangkat" disabled>
+									</div>
+
+									<div class="inputan">
+										<label>Tujuan</label>
+										<select name="tujuan" class="input tujuan" id="tujuan_pesan" disabled></select>
+									</div>
+
+									<div class="inputan">
+										<label>Jumlah Tiket</label>
+										<input type="text" name="jumlah_tiket" class="input" id="jumlah_tiket_pesan" disabled>
+									</div>
+
+									<div class="inputan">
+										<label>Harga</label>
+										<input type="text" name="tanggal_berangkat" class="input" id="harga_tiket_pesan" value="0" disabled>
+									</div>
+								</form>
+							</div>
+						</td>
+						<td style="width: 50%">
+							<div class="pesan">
+								<form>
+
+									<div class="inputan">
+										<label>Subtotal Harga</label>
+										<input type="text" id="subtotal_harga" class="input" name="subtotal_harga" disabled>	
+									</div>
+
+									<div class="inputan">
+										<label>Member</label><br>
+										<input type="radio" name="member" value="1" onclick="cekMember(this)"> Ya
+										<input type="radio" name="member" value="0" onclick="cekMember(this)" checked="checked"> Tidak
+									</div>
+
+									<div class="inputan">
+										<label>Diskon</label>
+										<input type="text" name="diskon_pesan" class="input" id="diskon_pesan" value="0" disabled>
+									</div>
+
+									<div class="inputan">
+										<label>Total Harga</label>
+										<input type="text" name="total_harga" class="input" id="total_harga_tiket" value="0" disabled>
+									</div>
+
+									<div class="inputan">
+										<button type="button" onclick="bayarTiket()" class="btn btn-biru">
+											<i class="fa fa-money"></i>
+											Bayar
+										</button>
+
+										<button type="button" class="btn btn-merah" onclick="window.location.reload();">
+											<i class="fa fa-times"></i>
+											Batal
+										</button>
+									</div>
+								</form>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+
+		</div>
+
+
+		<div class="kolom2">
+			<div class="isine">
+				<div id="tabel_biodata"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		Copyright &copy; Ertha Dwi Setiyawan
+	</div>
+	<script src="script.js"></script>
+	<script src="pesan.js"></script>
+</body>
+</html>

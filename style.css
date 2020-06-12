@@ -1,0 +1,232 @@
+/*
+	Developed by Ertha Dwi Setiyawan
+*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #333;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+}
+
+
+ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+
+ul > li {
+	display:inline-block;
+}
+
+ul > li > a{
+	padding: 12px;
+	cursor: pointer;
+	color: #fff;
+}
+
+ul > li > a:hover{
+	padding-top: 19px;
+	padding-bottom: 19px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #239273;
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+p,
+h1,h2,h3,h4,h5,h6{
+	margin-top: 0px;
+	margin-bottom: 1em;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.header{
+	position: relative;
+	display: inline-block;
+	background-color: #2cb38e;
+	padding: 5px;
+	outline: none;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    z-index: 2;
+}
+
+.menu{
+	/*float: left;*/
+	width: 100%;
+	display:block;
+}
+
+.title{
+	display: block;
+	background-color: #333;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+
+.title > a {
+	color: #fff;
+}
+
+.konten{
+	position: relative;
+	width: 100%;
+	display: flex;
+	float: left;
+	height: auto;
+	/*height: calc(100vh - 100px);*/
+}
+
+.kolom1{
+	float: left;
+	width: 100%;
+	flex: 3;
+}
+
+.kolom2{
+	float: left;
+	width: 100%;
+	flex: 1;
+}
+
+.isine{
+	background-color: #fff;
+	-webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    border-radius: 5px;
+    height: 100px auto;
+    margin: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table > thead > tr > th {
+	padding: 10px;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+	background-color: #2cb38e;
+	color: #fff;
+}
+
+table > tbody > tr > td {
+	padding: 8px;
+	border: 1px solid #ddd;
+	vertical-align: top;
+}
+
+.gambar{
+	width: 100%;
+	display: block;
+	height: 150px;
+}
+
+.radius{
+	border-radius: 3%;
+}
+
+.kolom-gambar{
+	display: inline-table;
+	width: 20%;
+	margin: 10px;
+	padding: 0;
+}
+
+.input{
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	outline: none;
+	border: 1px solid #ddd;
+	font-family: "Roboto", sans-serif;
+}
+
+.kontak{
+	border: 1px solid #ddd;
+	padding: 18px;
+	border-radius: 4px;
+}
+.form{
+	margin-bottom: 1em;
+}
+
+.btn{
+	border:0px;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 8px 16px;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: 400;
+	margin-bottom: 0;
+	user-select: none;
+	vertical-align: middle;
+	line-height: 1.4;
+	border: 1px solid transparent;
+	color: #333;
+	border-color: #ccc;
+}
+
+.btn-biru{
+	background-color: #2cb38e;
+	color: #fff;
+	border:1px solid #2cb38e;
+}
+
+.btn-merah{
+	background-color: #f13f3f;
+	color: #fff;
+	border:1px solid #f13f3f;
+}
+
+.footer{
+	/*display: none;*/
+	clear: both;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	color: #333;
+	text-align: center;
+	position: relative;
+	margin-top: 15px;
+	padding: 18px;
+    z-index: 2;
+}
+
+.inputan{
+	line-height: 1.8rem;
+	margin-bottom: 0.8rem;
+	vertical-align: top;
+}

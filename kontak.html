@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="title">
+		<a href="" id="title"></a>
+	</div>
+
+	<nav class="header"> 
+		<div class="menu">
+			<ul id="menu">
+				<!-- Menu Dengan Javascript -->
+			</ul>
+		</div>
+	</nav>
+
+	<div class="konten">
+		<div class="kolom1">
+			<div class="isine">
+				<h3>
+					Kontak
+				</h3>
+
+				<div class="pesan">
+					<form method="post" onsubmit="return false;">
+
+						<div class="inputan">
+							<label>Nama</label>
+							<input type="text" class="input" id="nama" name="nama" placeholder="Nama">
+						</div>
+
+						<div class="inputan">
+							<label>Email</label>
+							<input type="email" class="input" id="email" name="email" placeholder="Email">
+						</div>
+
+						<div class="inputan">
+							<label>Telp. (Mobile)</label>
+							<input type="text" class="input" id="no_hp" name="no_hp" placeholder="Telp. (Mobile)">
+						</div>
+
+						<div class="inputan">
+							<label>Pesan</label>
+							<textarea class="input" rows="5" placeholder="Pesan" id="pesan"></textarea>
+						</div>
+
+						<div class="inputan">
+							<button type="button" onclick="kirimPesan()" class="btn btn-biru">
+								<i class="fa fa-send"></i>
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="kolom2">
+			<div class="isine">
+				<div id="tabel_biodata"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		Copyright &copy; Ertha Dwi Setiyawan
+	</div>
+	<script src="script.js"></script>
+	<script src="kontak.js"></script>
+</body>
+</html>
